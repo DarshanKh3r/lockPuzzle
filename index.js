@@ -1,3 +1,4 @@
+//First Comment
 
 var answer1 = "8";
 var answer2 = "2";
@@ -38,8 +39,9 @@ function checkAnswer(input1,input2,input3){
 
 }
 
-function  inputHandler(i){
+// inputHandler
 
+function  inputHandler(i){
 
     var input1 = document.getElementById("input1");
     var input2 = document.getElementById("input2");
@@ -58,7 +60,7 @@ function  inputHandler(i){
     
 }
 
-
+// to clear inputs
 function clr()
 {
    var input1 = document.getElementById("input1");
