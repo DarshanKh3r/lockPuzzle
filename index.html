@@ -6,7 +6,7 @@
         <title>Lock</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>       
         <div class="container">
@@ -29,36 +29,38 @@
             </form>
         </div>
         <div class="buttonDisplay">
-            <br>
-            <br>
-            <input type="button" value="4" onclick="inputHandler('4')">
-            <input type="button" value="6" onclick="inputHandler('6')">
-            <input type="button" value="0" onclick="inputHandler('0')">
-            <label for="">one number is correct and in the right place</label>
-            <br>
-            <br>
-            <input type="button" value="4" onclick="inputHandler('4')">
-            <input type="button" value="9" onclick="inputHandler('9')">
-            <input type="button" value="2" onclick="inputHandler('2')">
-            <label for="">one number is correct but in the wrong place</label>
-            <br>
-            <br>
-            <input type="button" value="0" onclick="inputHandler('0')">
-            <input type="button" value="8" onclick="inputHandler('8')">
-            <input type="button" value="4" onclick="inputHandler('4')">
-            <label for="">two numbers are correct but in the wrong place</label>
-            <br>
-            <br>
-            <input type="button" value="5" onclick="inputHandler('5')">
-            <input type="button" value="1" onclick="inputHandler('1')">
-            <input type="button" value="6" onclick="inputHandler('6')">
-            <label for="">nothing is correct</label>
-            <br>
-            <br>
-            <input type="button" value="5" onclick="inputHandler('5')">
-            <input type="button" value="6" onclick="inputHandler('6')">
-            <input type="button" value="8" onclick="inputHandler('8')">
-            <label for="">one number is correct but in the wrong place</label>
+
+            <section class="firstSection">
+                <input type="button" value="4" onclick="inputHandler('4')">
+                <input type="button" value="6" onclick="inputHandler('6')">
+                <input type="button" value="0" onclick="inputHandler('0')">
+                <label for="">one number is correct and in the right place</label>
+            </section>
+            <section class="secondSection">
+
+                <input type="button" value="4" onclick="inputHandler('4')">
+                <input type="button" value="9" onclick="inputHandler('9')">
+                <input type="button" value="2" onclick="inputHandler('2')">
+                <label for="">one number is correct but in the wrong place</label>
+            </section>
+           <section class="thirdSection">
+               <input type="button" value="0" onclick="inputHandler('0')">
+               <input type="button" value="8" onclick="inputHandler('8')">
+               <input type="button" value="4" onclick="inputHandler('4')">
+               <label for="">two numbers are correct but in the wrong place</label>
+            </section>
+               <section class="fourthSection">
+                   <input type="button" value="5" onclick="inputHandler('5')">
+                   <input type="button" value="1" onclick="inputHandler('1')">
+                   <input type="button" value="6" onclick="inputHandler('6')">
+                   <label for="">nothing is correct</label>
+                </section>
+            <section class="fifthSection">
+                <input type="button" value="5" onclick="inputHandler('5')">
+                <input type="button" value="6" onclick="inputHandler('6')">
+                <input type="button" value="8" onclick="inputHandler('8')">
+                <label for="">one number is correct but in the wrong place</label>
+            </section>
         </div>            
             <script src="index.js"></script>
         </body>
