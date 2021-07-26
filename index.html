@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lock</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>       
+        <div class="container">
+            <h1>Solve this</h1>
+            <img src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-lock-icon-png-image_318067.jpg" style="height: 100px; width: 100px;" alt="" srcset="">
+            <h2>This Lock has a 3-digit code</h2>
+            <h3>Can you crack it using only these hints?</h3>
+        </div>
+            <!-- <form name ="form1" action="/" method="POST" > -->
+        <div class="form">
+            <form name="form1">   
+                <input type="text" class="form-control register_form" name="input1" id="input1" placeholder="enter num1" maxlength="1" />
+                <br><br>
+                <input type="text" class="form-control register_form" name="input2" id="input2" placeholder="enter num2" maxlength="1" />
+                <br><br>
+                <input type="text" class="form-control register_form" name="input3" id="input3" placeholder="enter num3" maxlength="1" />
+                <!-- <input type="submit" value="Submit"> -->
+                <button id="btnClear" onclick="clr()">Clear</button>
+                <button id="btnSubmit" onclick="myFunction()">Submit</button>
+            </form>
+        </div>
+        <div class="buttonDisplay">
+            <br>
+            <br>
+            <input type="button" value="4" onclick="inputHandler('4')">
+            <input type="button" value="6" onclick="inputHandler('6')">
+            <input type="button" value="0" onclick="inputHandler('0')">
+            <label for="">one number is correct and in the right place</label>
+            <br>
+            <br>
+            <input type="button" value="4" onclick="inputHandler('4')">
+            <input type="button" value="9" onclick="inputHandler('9')">
+            <input type="button" value="2" onclick="inputHandler('2')">
+            <label for="">one number is correct but in the wrong place</label>
+            <br>
+            <br>
+            <input type="button" value="0" onclick="inputHandler('0')">
+            <input type="button" value="8" onclick="inputHandler('8')">
+            <input type="button" value="4" onclick="inputHandler('4')">
+            <label for="">two numbers are correct but in the wrong place</label>
+            <br>
+            <br>
+            <input type="button" value="5" onclick="inputHandler('5')">
+            <input type="button" value="1" onclick="inputHandler('1')">
+            <input type="button" value="6" onclick="inputHandler('6')">
+            <label for="">nothing is correct</label>
+            <br>
+            <br>
+            <input type="button" value="5" onclick="inputHandler('5')">
+            <input type="button" value="6" onclick="inputHandler('6')">
+            <input type="button" value="8" onclick="inputHandler('8')">
+            <label for="">one number is correct but in the wrong place</label>
+        </div>            
+            <script src="index.js"></script>
+        </body>
+</html>
