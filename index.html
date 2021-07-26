@@ -16,7 +16,7 @@
             <h3>Can you crack it using only these hints?</h3>
         </div>
             <!-- <form name ="form1" action="/" method="POST" > -->
-        <div class="form">
+        <div class="formSection">
             <form name="form1">   
                 <input type="text" class="form-control register_form" name="input1" id="input1" placeholder="enter num1" maxlength="1" />
                 <br><br>
@@ -28,40 +28,9 @@
                 <button id="btnSubmit" onclick="myFunction()">Submit</button>
             </form>
         </div>
-        <div class="buttonDisplay">
-
-            <section class="firstSection">
-                <input type="button" value="4" onclick="inputHandler('4')">
-                <input type="button" value="6" onclick="inputHandler('6')">
-                <input type="button" value="0" onclick="inputHandler('0')">
-                <label for="">one number is correct and in the right place</label>
-            </section>
-            <section class="secondSection">
-
-                <input type="button" value="4" onclick="inputHandler('4')">
-                <input type="button" value="9" onclick="inputHandler('9')">
-                <input type="button" value="2" onclick="inputHandler('2')">
-                <label for="">one number is correct but in the wrong place</label>
-            </section>
-           <section class="thirdSection">
-               <input type="button" value="0" onclick="inputHandler('0')">
-               <input type="button" value="8" onclick="inputHandler('8')">
-               <input type="button" value="4" onclick="inputHandler('4')">
-               <label for="">two numbers are correct but in the wrong place</label>
-            </section>
-               <section class="fourthSection">
-                   <input type="button" value="5" onclick="inputHandler('5')">
-                   <input type="button" value="1" onclick="inputHandler('1')">
-                   <input type="button" value="6" onclick="inputHandler('6')">
-                   <label for="">nothing is correct</label>
-                </section>
-            <section class="fifthSection">
-                <input type="button" value="5" onclick="inputHandler('5')">
-                <input type="button" value="6" onclick="inputHandler('6')">
-                <input type="button" value="8" onclick="inputHandler('8')">
-                <label for="">one number is correct but in the wrong place</label>
-            </section>
+        <div id="buttonDisplay">
         </div>            
+        <section class="firstSection">
             <script src="index.js"></script>
         </body>
 </html>
