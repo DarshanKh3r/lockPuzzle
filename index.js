@@ -38,16 +38,22 @@ function myFunction()
     var input1 = document.getElementById("input1").value;
     var input2 = document.getElementById("input2").value;
     var input3 = document.getElementById("input3").value;
+    var message = document.getElementById("message");
 
     if (input1 == '')
     {
-        alert("please enter a number1")
+        message.textContent = "please enter a number1";
+        message.style.color = "orange";
     }
-    else if (input2 == ''){
-        alert("please enter a number2")
+    else if (input2 == '')
+    {
+        message.textContent = "please enter a number2";
+        message.style.color = "orange";
     }
-    else if (input3 == ''){
-        alert("please enter a number3")
+    else if (input3 == '')
+    {
+        message.textContent = "please enter a number3";
+        message.style.color = "orange";
     }
     else
     {
@@ -55,14 +61,16 @@ function myFunction()
     }
 }
 function checkAnswer(input1,input2,input3){
-    
+    var message = document.getElementById("message");
     if(answer1 == input1 && answer2 == input2 && answer3 == input3)
     {
-        alert("Correct Answer!"); 
+        message.textContent = "Correct Answer!"; 
+        message.style.color = "Green";
     }
     else
     {
-        alert("Wrong Answer, Try Again!");
+        message.textContent = "Wrong Answer!, Try Again!"; 
+        message.style.color = "Red";
     }
 
 }
@@ -94,9 +102,13 @@ function clr()
    var input1 = document.getElementById("input1");
    var input2 = document.getElementById("input2");
    var input3 = document.getElementById("input3");
+   var message = document.getElementById("message");
+
     input1.value = '';
     input2.value = '';
     input3.value = '';
+    message.textContent = 'Enter Answer';
+    message.style.color = "Black";
 }
 
 // answer = 820 concate with input strings 
